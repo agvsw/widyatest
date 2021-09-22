@@ -1,0 +1,24 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db_widya
+    username: postgres
+    password: 1234
+    initialization-mode: always
+#  redis:
+#    host: localhost
+#    password:
+#    port: 6379
+server:
+  port : 8081
+security:
+  oauth2:
+    resource:
+      filter-order: 3
+  signing-key: RK+Lh9x5eJPo5CAZ3/ANBE0sTK0ZsDGMak2m1g7
